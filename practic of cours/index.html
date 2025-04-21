@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задача 1</title>
+  <style>
+    .header{
+      background-color: bisque;
+      height: 80px;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="content"></div>
+    <div class="title"></div>
+    <script>
+      const contentEl = document.querySelector('.content');
+      const h1El = document.createElement('h1');
+      const headerEl = document.createElement('header');
+      const h2El = document.createElement('h2');
+      const pEl = document.createElement('p');  
+      const textTitle = document.createTextNode('New heading node');
+      const titleEl = document.querySelector('.title');
+
+      const name = 'John'; 
+
+
+      // console.log(h1El);
+      // console.log(contentEl);
+      console.log(textTitle);
+
+      headerEl.classList.add('header');
+      titleEl.classList.remove('title')
+      contentEl.prepend(headerEl);
+      contentEl.prepend(h2El);
+      contentEl.append(pEl);
+      contentEl.append(h1El);
+      h1El.append(textTitle);
+      h1El.textContent = `Heading title element ${name}`; //рекомендуется такая пропись  
+      h1El.style.color = 'forestgreen';
+      h1El.style.backgroundColor = 'black'
+      h2El.textContent = 'Название статьи';
+      pEl.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptatibus?';
+      headerEl.innerHTML = '<span>Teg no recomedation</span>'; //не рекомендуется такая пропись  
+    </script>
+</body>
+
+</html>
