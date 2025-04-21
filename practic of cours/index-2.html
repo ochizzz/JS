@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задача 1</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <script>
+    
+      // function hello(name){
+      //   console.log(`hello ${name}`);
+      // }
+
+
+      // function sayHello(callback){
+      //   const userName = prompt('Ваше имя');
+      //   callback(userName);
+      // }
+
+      // sayHello(hello); 
+
+      //  //prompt запрашивает имя.
+
+      //  //Введённое имя передаётся в hello.
+      //  //hello выводит: hello [Имя].
+
+      function userResultAge(ageUser){
+        if (ageUser >= 18){
+          console.log('«Добро пожаловать на наш взрослый сайт!», если возраст 18 и более лет');
+        }
+        else{
+          console.log('«Извините, доступ только для совершеннолетних», если возраст меньше 18 лет.');
+        }
+      }
+
+      function processUserInput(callback){
+        const age = prompt('«Пожалуйста, введите ваш возраст»');
+        callback(age);
+      }
+
+      processUserInput(userResultAge);
+    </script>
+</body>
+
+</html>
+
