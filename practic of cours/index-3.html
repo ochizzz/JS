@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задача 1</title>
+  <style>
+    .red{
+      color: red;
+    }
+    .block{
+      width: 200px;
+      height: 200px;
+      background-color: indigo;
+      border-radius: 20px;
+      margin: 50px;
+      padding: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <h1 class="title">Lorem ipsum dolor sit amet.</h1>
+  <button class="button">text button</button> -->
+
+
+
+  <!-- <div class="content">
+    <button class="button">
+      add block
+    </button>
+  </div> -->
+
+
+
+
+
+  <button class="myButton">Увеличить счётчик</button>
+  <p class="counter">Счётчик: 0</p>
+
+  <script>
+    // const buttonEl = document.querySelector('.button');
+    // const titleEl = document.querySelector('.title');
+
+    // buttonEl.onclick = function () {
+    //   titleEl.textContent = 'New text click';
+    //   buttonEl.classList.toggle('red');
+    // }
+
+
+    // const contentEl = document.querySelector('.content');
+    // const buttonEl = document.querySelector('.button');
+
+    // const blockEl = document.createElement('div');
+    // blockEl.classList.add('block');
+    // blockEl.textContent = 'new block';
+
+    // buttonEl.onclick = function(){
+    //   contentEl.append(blockEl);
+    // }
+
+
+
+
+
+    const buttonEl = document.querySelector('.myButton');
+    const pEl = document.querySelector('.counter');
+
+    let count = 0;
+    buttonEl.onclick = function(){
+      count++;
+      pEl.textContent = "Счётчик: " + count;
+    }
+  // myButton.onclick = increaseCounter;
+  </script>
+</body>
+
+</html>
